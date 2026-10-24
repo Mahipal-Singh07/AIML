@@ -43,9 +43,28 @@
 # print("a:",a,"b:",b)
 
 # Q7
-temperature = str(input("enter temp in celsius : "))
+# temperature = str(input("enter temp in celsius : "))
+# CelsiusTemp=float(temperature)
+# FahrenheitTemp = (CelsiusTemp*(9/5)+32)
+# print("FahrenheitTemp :",FahrenheitTemp)
 
-CelsiusTemp=float(temperature)
+#Q8
+# r=float(input("enter radius :"))
+# Area = 3.14 * (r**2)
+# print("Area: ",Area)
 
-FahrenheitTemp = (CelsiusTemp*(9/5)+32)
-print("FahrenheitTemp :",FahrenheitTemp)
+#Q9
+# P=float(input("enter principal : "))
+# R=float(input("enter Rate : "))
+# T=float(input("enter Time : "))
+# SI=(P*R*T)/100
+# print("SI:",SI)
+
+#Q10
+num = float(input("Enter a decimal number: "))
+
+integer_part = int(num)
+fractional_part = num - integer_part
+
+print("Integer part:", integer_part)
+print("Fractional part:", round(fractional_part, 2))
