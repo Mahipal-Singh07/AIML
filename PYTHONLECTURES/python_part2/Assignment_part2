@@ -1,0 +1,19 @@
+#Q1
+
+# salary=int(input("enter salary :"))
+# if(salary<30000):
+#     print("tax=5%")
+# elif(salary>=30000 and salary<=70000):
+#     print("tax=15%")
+# else:
+#     print("tax=25%")   
+
+# Q2
+def even_num(a,b):
+    for i in range(a,b+1):
+      if(i%2==0):
+        print(i)
+
+a=int(input("enter a :"))   
+b=int(input("enter b :"))  
+even_num(a,b)    
