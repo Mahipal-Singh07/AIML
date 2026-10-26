@@ -9,11 +9,48 @@
 #     print("tax=25%")   
 
 # Q2
-def even_num(a,b):
-    for i in range(a,b+1):
-      if(i%2==0):
-        print(i)
+# def even_num(a,b):
+#     for i in range(a,b+1):
+#       if(i%2==0):
+#         print(i)
 
-a=int(input("enter a :"))   
-b=int(input("enter b :"))  
-even_num(a,b)    
+# a=int(input("enter a :"))   
+# b=int(input("enter b :"))  
+# even_num(a,b)    
+
+#Q3
+# def digits_cal(n):
+#     while(n>0):
+#         rem=n%10
+#         print(rem)
+#         n=n//10
+# digits_cal(312)     
+
+#Q4
+# def digits_cal(n):
+#     count=0
+#     while(n>0):
+#         rem=n%10
+#         count+=1
+#         n=n//10
+#     return count    
+# print(digits_cal(3125)) 
+
+#Q5
+# def digits_cal(n):
+#      sum=0
+#      while(n>0):
+#          rem=n%10
+#          sum+=rem
+#          n=n//10
+#      return sum    
+# print(digits_cal(3125)) 
+
+# Q6
+def print_num(n1,n2):
+    for i in range(n1,n2):
+        if(i%3==0 and i%5==0):
+            print(i)
+print_num(1,100)
+
+# Q7
