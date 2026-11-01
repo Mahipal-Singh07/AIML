@@ -43,17 +43,68 @@
 
 #Q4
 
-tup = (1, 2, 3, 4, 5, 6, 7, 8)
+# tup = (1, 2, 3, 4, 5, 6, 7, 8)
 
-even=()
-odd=()
+# even=()
+# odd=()
 
-for val in tup:
-    if(val%2==0):
-        even+=(val,)
-    else:
-        odd+=(val,) 
+# for val in tup:
+#     if(val%2==0):
+#         even+=(val,)
+#     else:
+#         odd+=(val,) 
 
-print(even)
-print(odd)
+# print(even)
+# print(odd)
           
+#Q5
+students = {}
+
+while True:
+    print("\n----- Student Management System -----")
+    print("A. Add a student")
+    print("B. Update marks")
+    print("C. Search for a student")
+    print("D. Display all students and marks")
+    print("E. Exit")
+
+    choice = input("Enter your choice: ").upper()
+
+    if choice == 'A':
+        name = input("Enter student name: ")
+        marks = int(input("Enter marks: "))
+
+        students[name] = marks
+        print("Student added successfully!")
+
+    elif choice == 'B':
+        name = input("Enter student name: ")
+
+        if name in students:
+            marks = int(input("Enter updated marks: "))
+            students[name] = marks
+            print("Marks updated successfully!")
+        else:
+            print("Student not found!")
+
+    elif choice == 'C':
+        name = input("Enter student name: ")
+
+        if name in students:
+            print(f"{name} obtained {students[name]} marks")
+        else:
+            print("Student not found!")
+
+    elif choice == 'D':
+        if students:
+            for name, marks in students.items():
+                print(f"Student: {name}, Marks: {marks}")
+        else:
+            print("No student records found!")
+
+    elif choice == 'E':
+        print("Exiting program...")
+        break
+
+    else:
+        print("Invalid choice! Please try again.")
